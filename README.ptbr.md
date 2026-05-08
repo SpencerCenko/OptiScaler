@@ -11,14 +11,14 @@
 </div>
 <br />
 
-## Table of Contents
+## Sumário
 
-**1.** [**About**](#about)  
-**2.** [**How it works?**](#how-it-works)  
-**3.** [**Supported APIs and Upscalers**](#which-apis-and-upscalers-are-supported)  
-**4.** [**Installation**](#installation)  
-**5.** [**Known Issues**](#known-issues)  
-**6.** [**Compilation and Credits**](#compilation)  
+**1.** [**Sobre**](#about)  
+**2.** [**Como funciona?**](#how-it-works)  
+**3.** [**APIs suportadas e Upscalers**](#which-apis-and-upscalers-are-supported)  
+**4.** [**Instalação**](#installation)  
+**5.** [**Problemas conhecidos**](#known-issues)  
+**6.** [**Compilação e créditos**](#compilation)  
 **7.** [**Wiki**](https://github.com/optiscaler/OptiScaler/wiki)
 
 <br />
@@ -51,21 +51,21 @@
 **Aspectos chave do OptiScaler:**
 - Habilita o uso de XeSS, FSR2, FSR3, **FSR4**$`^2`$ (_oficialmente, disponível apenas para RDNA4_) e DLSS em jogos com upscaler(temporal) habilitado
 - Permite usuários ajustem sua experiência de upscaling conforme desejar, usando uma vasta gama de ajustes e aprimoramentos (RCAS e MAS, Output Scaling, Presets do DLSS, Ratio e DRS Overrides etc.)
-- Desde v0.7.0+, adicionamos o suporte ao ***frame generation experimental DX12*** com uma possível solução de HUDfix ([**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix))
-- Suporte à integração com [**Fakenvapi**](#installation) - habilitando Reflex hooking e injetando _Anti-Lag 2_ (apenas RDNA1+), _LatencyFlex_ (LFX) ou _XeLL_ (apenas Intel) - _integrado desde 0.9_  
-- Since v0.7.7, added support for **Nukem's** FSR3-FG mod [**dlssg-to-fsr3**](#installation), only supports games with ***native DLSS-FG*** - _bundled since 0.9_
-- Since v0.7.8, added **ASI plugin loading** support (_disabled_ by default (`LoadAsiPlugins=` in INI), loads from customisable folder, default `plugins`)
-- New project - [**OptiPatcher**](https://github.com/optiscaler/OptiPatcher) - an ASI Plugin for OptiScaler for enabling DLSS and DLSSG inputs without spoofing in ***supported games***.
-- Since v0.7.8, OptiScaler is now automatically applying certain game patches for a better out-of-the-box experience
-- Since v0.9.0, separated FG Inputs and Outputs, added XeFG and FSR4-FG support, as well as bundled Fakenvapi and Nukem's FSR3-FG mod
-- For a detailed list of all features, check [Features](Features.md)
+- Desde v0.7.0+, adicionado o suporte ao ***frame generation experimental DX12*** com uma possível solução de HUDfix ([**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix))
+- Suporte ao [**Fakenvapi**](#installation) integrado - habilitando Reflex hooking e injetando _Anti-Lag 2_ (apenas RDNA1+), _LatencyFlex_ (LFX) ou _XeLL_ (apenas Intel) - _integrado desde 0.9_  
+- Desde v0.7.7, adicionado suporte ao mod **Nukem's** FSR3-FG [**dlssg-to-fsr3**](#installation), apenas suportado em jogos com *** DLSS-FG nativo*** - _integrado desde 0.9_
+- Desde v0.7.8, aicionado suporte ao **ASI plugin loading**(_desabilitado_ por padrão(`LoadAsiPlugins=` no INI), carrega de uma pasta customizada, por padrão `plugins`)
+- Novo projeto - [**OptiPatcher**](https://github.com/optiscaler/OptiPatcher) - um Plugin ASI para o OptiScaler que permite inputs DLSS e DLSSG sem necessidade de spoofing em ***jogos suportados***.
+- Desde v0.7.8, OptiScaler agora aplica automáticamente certos patches aos jogos para uma melhor experiência.
+- Desde v0.9.0, Inputs e Outputs de FG separados, adicionado suporte ao XeFG e ao FSR4-FG , também integramos Fakenvapi e o mod Nukem's FSR3-FG 
+- Para uma lista detalhada de todas as funcionalidades, consulte [Funcionalidades](Features.md)
 
 
 > [!IMPORTANT]
-> _**Always check the [Wiki Compatibility list](https://github.com/optiscaler/OptiScaler/wiki) for known game issues and workarounds.**_  
-> Also please check the  [***OptiScaler known issues***](#known-issues) at the end regarding **RTSS** compatibility.  
-> A separate [***FSR4 Compatibility list***](https://github.com/optiscaler/OptiScaler/wiki/FSR4-Compatibility-List) is available for community-sourced tested games.  
-> ***[3]** For **not bundled** items, please check [Installation](#installation).*  
+> _**Sempre consulte a [lista de compatibilidade na wiki](https://github.com/optiscaler/OptiScaler/wiki) para problemas conhecidos e soluções alternativas.**_  
+> Também consulte  [***problemas conhecidos do OptiScaler ***](#known-issues) no final a respeito de compatibilidade ao **RTSS** .  
+> Uma [***lista de compatibilidade FSR4***](https://github.com/optiscaler/OptiScaler/wiki/FSR4-Compatibility-List) separa está dísponível para jogos testados pela comunidade.  
+> ***[3]** Para itens **não integrados**, consulte [Instalação](#installation).*  
 
 > [!NOTE]
 > ### Upscaler notes
