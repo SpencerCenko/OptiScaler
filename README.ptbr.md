@@ -36,24 +36,23 @@
 </div>
 
 
-## About
-
-**OptiScaler** is a tool that lets you replace upscalers in games that ***already support DLSS2+ / FSR2+ / XeSS*** ($`^1`$), as well as manage ***frame generation*** in already mentioned games _(either by replacing existing FG options or enabling it in DX12 games through experimental ***OptiFG***)_. It also offers extensive customization options for all users, including those with Nvidia GPUs using DLSS.
+## Sobre
+ **OptiScaler** é uma ferramenta que te permite substituir upscalers em jogos que ***já suportam DLSS2+ / FSR2+ / XeSS*** ($`^1`$), assim como gerenciar o ***frame generation*** nos jogos já mencionados _(seja substituindo o FG já existente ou habilitando-o em jogos que suportam DX12 através do experimental ***OptiFG***)_. Também oferece várias opções de customização para todos os usuários, incluindo aqueles com placas de vídeo Nvidia usando DLSS.
 
 > [!CAUTION]
-> * We've been informed about some **FAKE websites** presenting themselves as OptiScaler team, so we would like to strongly highlight that we **DO NOT HAVE an official website!**
-> * **We DON'T have an official manager app**, so please be careful when downloading or using them!
-> * Only **LEGIT places** are this Github, our Discord server and Nitec's NexusMods page.  
-> * OptiScaler is **FREE**, any kind of monetary requirements are scams!  
+> * Temos recebido relatos sobre alguns **websites FALSOS** se apresentando como o time OptiScaler, então nós gostaríamos fortemente de ressaltar que nós **NÃO TEMOS um website oficial!**
+> * **Nós NÃO temos um aplicativo gerenciador oficial**, então por favor sejam cautelosos baixando ou usando eles!
+> * Os únicos **lugares LEGÍTIMOS** são esse Github, nosso servidor no Discord e a página de Nitec no site NexusMods.  
+> * OptiScaler é **GRÁTIS**, qualquer tipo de necessidade de pagamento é golpe!  
 
 > [!TIP]
-> _For example, if a game has DLSS only, OptiScaler can be used to replace DLSS with XeSS or FSR 3.1 (also works for FSR2-only games, like The Outer Worlds Spacer's Choice, albeit requires manually providing nvngx_dlss.dll)._
-
-**Key aspects of OptiScaler:**
-- Enables usage of XeSS, FSR2, FSR3, **FSR4**$`^2`$ (_officially, RDNA4 only_) and DLSS in (temporal) upscaler-enabled games
-- Allows users to fine-tune their upscaling experience with a wide range of tweaks and enhancements (RCAS & MAS, Output Scaling, DLSS Presets, Ratio & DRS Overrides etc.)
-- Since v0.7.0+, added ***experimental DX12*** frame generation support with possible HUDfix solution ([**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix))
-- Supports [**Fakenvapi**](#installation) integration - enables Reflex hooking and injecting _Anti-Lag 2_ (RDNA1+ only), _LatencyFlex_ (LFX) or _XeLL_ (Intel only) - _bundled since 0.9_  
+> _Por exemplo, se um jogo só tem DLSS disponível, o OptiScaler pode ser usado para substituir o DLSS por XeSS ou FSR 3.1 (também funciona em jogos que só tem FSR2, como The Outer Worlds Spacer's Choice, embora exija prover manualmente o arquivo nvngx_dlss.dll)._
+  
+**Aspectos chave do OptiScaler:**
+- Habilita o uso de XeSS, FSR2, FSR3, **FSR4**$`^2`$ (_oficialmente, disponível apenas para RDNA4_) e DLSS em jogos com upscaler(temporal) habilitado
+- Permite usuários ajustem sua experiência de upscaling conforme desejar, usando uma vasta gama de ajustes e aprimoramentos (RCAS e MAS, Output Scaling, Presets do DLSS, Ratio e DRS Overrides etc.)
+- Desde v0.7.0+, adicionamos o suporte ao ***frame generation experimental DX12*** com uma possível solução de HUDfix ([**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix))
+- Suporte à integração com [**Fakenvapi**](#installation) - habilitando Reflex hooking e injetando _Anti-Lag 2_ (apenas RDNA1+), _LatencyFlex_ (LFX) ou _XeLL_ (apenas Intel) - _integrado desde 0.9_  
 - Since v0.7.7, added support for **Nukem's** FSR3-FG mod [**dlssg-to-fsr3**](#installation), only supports games with ***native DLSS-FG*** - _bundled since 0.9_
 - Since v0.7.8, added **ASI plugin loading** support (_disabled_ by default (`LoadAsiPlugins=` in INI), loads from customisable folder, default `plugins`)
 - New project - [**OptiPatcher**](https://github.com/optiscaler/OptiPatcher) - an ASI Plugin for OptiScaler for enabling DLSS and DLSSG inputs without spoofing in ***supported games***.
