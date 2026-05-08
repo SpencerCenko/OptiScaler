@@ -50,7 +50,7 @@
   
 **Aspectos chave do OptiScaler:**
 - Habilita o uso de XeSS, FSR2, FSR3, **FSR4**$`^2`$ (_oficialmente, disponível apenas para RDNA4_) e DLSS em jogos com upscaler(temporal) habilitado
-- Permite usuários ajustem sua experiência de upscaling conforme desejar, usando uma vasta gama de ajustes e aprimoramentos (RCAS e MAS, Output Scaling, Presets do DLSS, Ratio e DRS Overrides etc.)
+- Permite que os usuários ajustem sua experiência de upscaling conforme desejar, usando uma vasta gama de ajustes e aprimoramentos (RCAS e MAS, Output Scaling, Presets do DLSS, Ratio e DRS Overrides etc.)
 - Desde v0.7.0+, adicionado o suporte ao ***frame generation experimental DX12*** com uma possível solução de HUDfix ([**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix))
 - Suporte ao [**Fakenvapi**](#installation) integrado - habilitando Reflex hooking e injetando _Anti-Lag 2_ (apenas RDNA1+), _LatencyFlex_ (LFX) ou _XeLL_ (apenas Intel) - _integrado desde 0.9_  
 - Desde v0.7.7, adicionado suporte ao mod **Nukem's** FSR3-FG [**dlssg-to-fsr3**](#installation), apenas suportado em jogos com *** DLSS-FG nativo*** - _integrado desde 0.9_
@@ -63,32 +63,32 @@
 
 > [!IMPORTANT]
 > _**Sempre consulte a [lista de compatibilidade na wiki](https://github.com/optiscaler/OptiScaler/wiki) para problemas conhecidos e soluções alternativas.**_  
-> Também consulte  [***problemas conhecidos do OptiScaler ***](#known-issues) no final a respeito de compatibilidade ao **RTSS** .  
+> Também consulte  [***problemas conhecidos do OptiScaler***](#known-issues) no final a respeito de compatibilidade ao **RTSS** .  
 > Uma [***lista de compatibilidade FSR4***](https://github.com/optiscaler/OptiScaler/wiki/FSR4-Compatibility-List) separa está dísponível para jogos testados pela comunidade.  
 > ***[3]** Para itens **não integrados**, consulte [Instalação](#installation).*  
 
 > [!NOTE]
-> ### Upscaler notes
+> ### Notas de upscaler
 > <details>
 >  <summary><b>Click for [1], [2] </b></summary>  
 >  
-> **[1]** For **Unreal Engine** games, only UE XeSS -> Opti XeSS/FSR4 work  
+> **[1]** para jogos **Unreal Engine**, apenasUE XeSS -> Opti XeSS/FSR4 funciona  
 >  
-> *Regarding **XeSS** inputs, since **Unreal Engine plugin** does not provide depth, replacing in-game XeSS breaks other upscalers (e.g. Redout 2 as a XeSS-only game), but you can still apply RCAS sharpening to XeSS to reduce blurry visuals.* 
+> *a respeito dos **inputs do XeSS**, já que o plugin da **Unreal Engine** não fornece profundidade, substituir XeSS em jogos quebra outros upscalers (por exemplo: Redout 2 é um jogo com apenas XeSS), mas você ainda pode aplicar RCAS sharpening(nitidez) ao XeSS para reduzir o aspecto borrado.* 
 >
-> *Regarding **FSR inputs**, FSR 3.1 is the first version with a fully standardised, forward-looking API and should be fully supported. Since FSR2 and FSR3 support custom interfaces, game support will depend on the developers' implementation. With Unreal Engine games, you might need [ini tweaks](https://github.com/optiscaler/OptiScaler/wiki/Unreal-Engine-Tweaks) for FSR inputs.*  
+> *a respeito dos **inputs do FSR**, FSR 3.1 é a primeira versão totalmente padronizada, é uma API voltada para o futuro e que deve ser totalmente suportada. já que o FSR2 e FSR3 suportam interfaces customizadas, o suporte nos jogos dependerá totalmente da implementação dos desenvolvedores. Com jogos Unreal Engine, você pode precisar de [ini tweaks](https://github.com/optiscaler/OptiScaler/wiki/Unreal-Engine-Tweaks) para inputs FSR.*  
 >
-> **[2]** *Regarding **FSR4**, please check [FSR4 Compatibility list](https://github.com/optiscaler/OptiScaler/wiki/FSR4-Compatibility-List) for known supported games and general info.*
+> **[2]** *a respeito do **FSR4**, consulte [lista de compatibilidade FSR4](https://github.com/optiscaler/OptiScaler/wiki/FSR4-Compatibility-List) para jogos suportados e informações gerais.*
 > 
 > </details>
 
 
-## Official Discord Server: [OptiScaler](https://discord.gg/wEyd9w4hG5)
+## Servidor do Discord oficial: [OptiScaler](https://discord.gg/wEyd9w4hG5)
 
-*This project is based on [PotatoOfDoom](https://github.com/PotatoOfDoom)'s excellent [CyberFSR2](https://github.com/PotatoOfDoom/CyberFSR2).*
+*Esse projeto é baseado no excelente [CyberFSR2](https://github.com/PotatoOfDoom/CyberFSR2) de [PotatoOfDoom](https://github.com/PotatoOfDoom).*
 
-## How it works?
-* OptiScaler acts as a middleware, it intercepts upscaler calls from the game (_**Inputs**_) and redirects them to the chosen upscaling backend (_**Output**_), allowing user to replace one technology with another one. **Inputs -> OptiScaler -> Outputs**  
+## Como funciona?
+* O OptiScaler age como um intermediário, ele intercepta os chamados do upscaler pelo jogo (_**Inputs**_) e os redireciona para o upscaler escolhido no back-end (_**Output**_), permitindo o usuário à substituir uma tecnologia por outra. **Inputs -> OptiScaler -> Outputs**  
 * _Or put more bluntly, **Input** is the upscaler used in game settings, and **Output** the one selected in Opti Overlay._
 * _Same goes for FG options which are separated into **FG Source** and **FG Output**._
 
