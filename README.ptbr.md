@@ -13,9 +13,9 @@
 
 ## Sumário
 
-**1.** [**Sobre**](#sobre)  
-**2.** [**Como funciona?**](#como-funciona)  
-**3.** [**APIs suportadas e Upscalers**](#quais-apis-e-upscalers-sao-suportados)
+**1.** [**Sobre**](#about)  
+**2.** [**Como funciona?**](#how-it-work)  
+**3.** [**Quais APIs e Upscalers são suportados**](#apiups)
 **4.** [**Instalação**](#installation)  
 **5.** [**Problemas conhecidos**](#known-issues)  
 **6.** [**Compilação e créditos**](#compilation)  
@@ -36,7 +36,7 @@
 </div>
 
 
-## Sobre
+## Sobre {#about}
  **OptiScaler** é uma ferramenta que te permite substituir upscalers em jogos que ***já suportam DLSS2+ / FSR2+ / XeSS*** ($`^1`$), assim como gerenciar o ***frame generation*** nos jogos já mencionados _(seja substituindo o FG já existente ou habilitando-o em jogos que suportam DX12 através do experimental ***OptiFG***)_. Também oferece várias opções de customização para todos os usuários, incluindo aqueles com placas de vídeo Nvidia usando DLSS.
 
 > [!CAUTION]
@@ -87,7 +87,7 @@
 
 *Esse projeto é baseado no excelente [CyberFSR2](https://github.com/PotatoOfDoom/CyberFSR2) de [PotatoOfDoom](https://github.com/PotatoOfDoom).*
 
-## Como funciona?
+## Como funciona? {#how-it-work}
 * O OptiScaler age como um intermediário, ele intercepta os chamados do upscaler pelo jogo (_**Inputs**_) e os redireciona para o upscaler escolhido no back-end (_**Output**_), permitindo o usuário à substituir uma tecnologia por outra. **Inputs -> OptiScaler -> Outputs**  
 * _Ou de forma mais simples, **Input** é o upscaler usado nas configurações do jogo, e **Output** o que é selecionado no Overlay do optiscaler._
 * _O mesmo vale para as opções de FG que são separadas em **FG Source** e **FG Output**._
@@ -99,7 +99,7 @@
 
 ![inputs_e_outputs](https://github.com/user-attachments/assets/7ff37fd7-515f-488d-99ff-faa586e206fc)
 
-## quais APIs e Upscalers são Suportados?
+## quais APIs e Upscalers são Suportados? {#apiups}
 Atualmente o **OptiScaler** pode ser usado com DirectX 11, DirectX 12 e Vulkan, mas cada API tem diferentes tipos de upscalers suportados.  
 [**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix) atualmente **só em suportado em DX12** e isso é explicado em um tópico separado.
 
@@ -140,7 +140,7 @@ Atualmente o **OptiScaler** pode ser usado com DirectX 11, DirectX 12 e Vulkan, 
 Para mais informações sobre o OptiFG e como usá-lo, consulte a página na Wiki - [OptiFG](https://github.com/optiscaler/OptiScaler/wiki/OptiFG).
 
 
-## Instalação
+## Instalação {#installation}
 > [!CAUTION]
 > _**Aviso**: **não use esse mod em jogos online.** ele pode acionar o anti-cheat do jogo, resultando em banimentos!_
 
@@ -150,14 +150,14 @@ Para mais informações sobre o OptiFG e como usá-lo, consulte a página na Wik
 ## Configuração
 Por favor, consulte [esse](Config.md) documento para os parâmetros de configuração e explicações. Se sua placa de vídeo não é da Nvidia, consulte [GPU spoofing options](Spoofing.md) *(Irá ser atualizado)*
 
-## Problemas conhecidos
+## Problemas conhecidos {#known-issues}
 
 > [!NOTE]
 > **Para uma lista de problemas conhecidos, consulte a [**Wiki**](https://github.com/optiscaler/OptiScaler/wiki)**.
 > 
 > Também vale a pena checar a [Lista de compatibilidade](https://github.com/optiscaler/OptiScaler/wiki/Compatibility-List) for possible game issues and their fixes.
 
-## Compilação
+## Compilação {#compilation}
 
 ### Requisistos
 * Visual Studio 2022
