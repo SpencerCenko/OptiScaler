@@ -91,7 +91,7 @@
 <a id="how-it-works"></a>
 ## Como funciona? 
 
-* O OptiScaler age como um intermediário, ele intercepta os chamados do upscaler pelo jogo (_**Inputs**_) e os redireciona para o upscaler escolhido no back-end (_**Output**_), permitindo o usuário à substituir uma tecnologia por outra. **Inputs -> OptiScaler -> Outputs**  
+* O OptiScaler age como um intermediário, ele intercepta os chamados do upscaler pelo jogo (_**Inputs**_) e os redireciona para o upscaler escolhido no back-end (_**Output**_), permitindo o usuário a substituir uma tecnologia por outra. **Inputs -> OptiScaler -> Outputs**  
 * _Ou de forma mais simples, **Input** é o upscaler usado nas configurações do jogo, e **Output** o que é selecionado no Overlay do optiscaler._
 * _O mesmo vale para as opções de FG que são separadas em **FG Source** e **FG Output**._
 
@@ -179,7 +179,7 @@ Por favor, consulte [esse](Config.md) documento para os parâmetros de configura
 
 ## Agradecimentos
 * @PotatoOfDoom pelo CyberFSR2
-* @Artur pelo DLSS Enabler e por ter me ajudado à implementar a api NVNGX corretamente
+* @Artur pelo DLSS Enabler e por ter me ajudado a implementar a api NVNGX corretamente
 * @LukeFZ & @Nukem pelos seus ótimos mods e por compartilharem seu conhecimentos 
 * @FakeMichau pelo seu suporte contínuo, pelos testes e pela expansão contínua de funcionalidades(feature creep)
 * @QM pelos seus esforços constantes nos testes e por me ajudar a ter aos jogos
@@ -188,7 +188,7 @@ Por favor, consulte [esse](Config.md) documento para os parâmetros de configura
 * e toda a comunidade de DLSS2FSR por todo o seu suporte
 
 ## Créditos
-Esse projeto usa [FreeType](https://gitlab.freedesktop.org/freetype/freetype) licensiado sob o [FTL](https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/docs/FTL.TXT)
+Esse projeto usa [FreeType](https://gitlab.freedesktop.org/freetype/freetype) licenciado sob o [FTL](https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/docs/FTL.TXT)
 
 ## Patrocinadores
 <table>
