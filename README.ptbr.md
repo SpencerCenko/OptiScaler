@@ -100,7 +100,7 @@
 > * Pressionar **`Page Up`** mostra o status de performance no topo superior esquerdo da tela, e é possível alternar entre diferentes modos com **`Page Down`** (_Teclas de atalho(Keybinds) podem ser customizáveis no overlay_).  
 > * Se o overlay do Optiscaler desaparece instantaneamente após tentar apertar Insert algumas vezes, tente **`Alt + Insert`** ([solução alternativa](https://github.com/optiscaler/OptiScaler/issues/484) para layouts de teclado alternativos).
 
-![inputs_e_outputs](https://github.com/user-attachments/assets/7ff37fd7-515f-488d-99ff-faa586e206fc)
+![inputs_e_outputs](https://github.com/user-attachments/assets/7b67a3fb-dc25-4704-ae1b-fbfd390e2d3a")
 
 <a id="apiups"></a>
 ## quais APIs e Upscalers são Suportados? 
