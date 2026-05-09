@@ -57,7 +57,7 @@
 - Desde v0.7.8, aicionado suporte ao **ASI plugin loading**(_desabilitado_ por padrão(`LoadAsiPlugins=` no INI), carrega de uma pasta customizada, por padrão `plugins`)
 - Novo projeto - [**OptiPatcher**](https://github.com/optiscaler/OptiPatcher) - um Plugin ASI para o OptiScaler que permite inputs DLSS e DLSSG sem necessidade de spoofing em ***jogos suportados***.
 - Desde v0.7.8, OptiScaler agora aplica automáticamente certos patches aos jogos para uma melhor experiência.
-- Desde v0.9.0, Inputs e Outputs de FG separados, adicionado suporte ao XeFG e ao FSR4-FG , também integramos Fakenvapi e o mod Nukem's FSR3-FG 
+- Desde v0.9.0, Inputs e Outputs do FG foram separados, adicionado suporte ao XeFG e ao FSR4-FG , também integramos Fakenvapi e o mod Nukem's FSR3-FG 
 - Para uma lista detalhada de todas as funcionalidades, consulte [Funcionalidades](Features.md)
 
 
@@ -177,7 +177,7 @@ Por favor, consulte [esse](Config.md) documento para os parâmetros de configura
 * @Cryio, @krispy, @krisshietala, @Lordubuntu, @scz, @Veeqo pelo seu trabalho duro na (agora datado) [matrix de compatibilidade](https://docs.google.com/spreadsheets/d/1qsvM0uRW-RgAYsOVprDWK2sjCqHnd_1teYAx00_TwUY)
 * e toda a comunidade de DLSS2FSR por todo o seu suporte
 
-## Creditos
+## Créditos
 Esse projeto usa [FreeType](https://gitlab.freedesktop.org/freetype/freetype) licensiado sob o [FTL](https://gitlab.freedesktop.org/freetype/freetype/-/blob/master/docs/FTL.TXT)
 
 ## Patrocinadores
