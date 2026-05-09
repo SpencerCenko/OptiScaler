@@ -15,7 +15,7 @@
 
 **1.** [**Sobre**](#sobre)  
 **2.** [**Como funciona?**](#como-funciona)  
-**3.** [**APIs suportadas e Upscalers**](#which-apis-and-upscalers-are-supported)  
+**3.** [**APIs suportadas e Upscalers**](#quais-apis-e-upscalers-sao-suportados)
 **4.** [**Instalação**](#installation)  
 **5.** [**Problemas conhecidos**](#known-issues)  
 **6.** [**Compilação e créditos**](#compilation)  
