@@ -13,8 +13,8 @@
 
 ## Sumário
 
-**1.** [**Sobre**](#about)  
-**2.** [**Como funciona?**](#how-it-works)  
+**1.** [**Sobre**](#sobre)  
+**2.** [**Como funciona?**](#como-funciona)  
 **3.** [**APIs suportadas e Upscalers**](#which-apis-and-upscalers-are-supported)  
 **4.** [**Instalação**](#installation)  
 **5.** [**Problemas conhecidos**](#known-issues)  
