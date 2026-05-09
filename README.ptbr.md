@@ -16,11 +16,10 @@
 **1.** [**Sobre**](#about)  
 **2.** [**Como funciona?**](#how-it-work)  
 **3.** [**Quais APIs e Upscalers são suportados**](#apiups)
-**4.** [**Instalação**](#instalacao)  
+**4.** [**Instalação**](#installation)  
 **5.** [**Problemas conhecidos**](#known-issues)  
 **6.** [**Compilação e créditos**](#compilation)  
 **7.** [**Wiki**](https://github.com/optiscaler/OptiScaler/wiki)
-
 <br />
 <div align="center">
   <a href="https://discord.gg/wEyd9w4hG5"><img src="https://img.shields.io/badge/OptiScaler-blue?style=for-the-badge&logo=discord&logoColor=white&logoSize=auto&color=5865F2" alt="Discord invite"></a>
