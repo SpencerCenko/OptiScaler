@@ -89,38 +89,38 @@
 
 ## Como funciona?
 * O OptiScaler age como um intermediário, ele intercepta os chamados do upscaler pelo jogo (_**Inputs**_) e os redireciona para o upscaler escolhido no back-end (_**Output**_), permitindo o usuário à substituir uma tecnologia por outra. **Inputs -> OptiScaler -> Outputs**  
-* _Or put more bluntly, **Input** is the upscaler used in game settings, and **Output** the one selected in Opti Overlay._
-* _Same goes for FG options which are separated into **FG Source** and **FG Output**._
+* _Ou de forma mais bruta, **Input** é o upscaler usado nas configurações do jogo, e **Output** o que é selecionado no Overlay do optiscaler._
+* _O mesmo vale para as opções de FG que são separadas em *FG Source** e **FG Output**._
 
 > [!NOTE]
-> * Pressing **`Insert`** should open the Optiscaler **Overlay** in-game with all of the options (_`ShortcutKey=` can be changed in the INI file, or under **Keybinds** in the overlay_). 
-> * Pressing **`Page Up`** shows the performance stats overlay in the top left, and can be cycled between different modes with **`Page Down`** (_keybinds customisable in the overlay_).  
-> * If Opti overlay is instantly disappearing after trying Insert a few times, maybe try **`Alt + Insert`** ([reported workaround](https://github.com/optiscaler/OptiScaler/issues/484) for alternate keyboard layouts).
+> * Pressionar **`Insert`** deve abrir o **Overlay** do Optiscaler no jogo, com todas as opções (_`ShortcutKey=` pode ser alterado nos arquivos INI, ou em **Keybinds** no overlay_). 
+> * Pressionar **`Page Up`** mostra o status de performance no topo superior esquerdo da tela, e é possível alternar entre diferentes modos com **`Page Down`** (_Teclas de atalho(Keybinds) podem ser customizáveis no overlay_).  
+> * Se o overlay do Optiscaler desaparece instantaneamente após tentar apertar Insert algumas vezes, tente **`Alt + Insert`** ([solução alternativa](https://github.com/optiscaler/OptiScaler/issues/484) para layouts de teclado alternativos).
 
 ![inputs_and_outputs](https://github.com/user-attachments/assets/7ff37fd7-515f-488d-99ff-faa586e206fc)
 
-## Which APIs and Upscalers are Supported?
-Currently **OptiScaler** can be used with DirectX 11, DirectX 12 and Vulkan, but each API has different sets of supported upscalers.  
-[**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix) currently **only supports DX12** and is explained in a separate paragraph.
+## quais APIs e Upscalers são Suportados?
+Atualmente o **OptiScaler** pode ser usado com DirectX 11, DirectX 12 e Vulkan, mas cada API tem diferentes tipos de upscalers suportados.  
+[**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix) atualmente **só em suportado em DX12** e isso é explicado em um tópico separado.
 
-#### For DirectX 12
-- XeSS (Default)
+#### Para DirectX 12
+- XeSS (Padrão)
 - FSR 2.1.2, 2.2.1
-- FSR 3.X (and FSR 2.3.X)
-- FSR 4.X (via FSR3.X update, _officially RDNA4 only_)
+- FSR 3.X (e FSR 2.3.X)
+- FSR 4.X (via atualização do FSR3.X, _oficialmente exclusivo para RDNA4_)
 - DLSS
 
-#### For DirectX 11
-- FSR 2.2.1 (Default, native DX11)
-- FSR 3.1.2 (unofficial port to native DX11)
-- DLSS (native DX11)
-- XeSS 2.X (native DX11, _Intel ARC only_)
-- XeSS, FSR 2.1.2, 2.2.1, FSR 3.X w/Dx12 (_via D3D11on12_)$`^1`$
-- FSR 4.X (via FSR 3.X w/Dx12 update, _officially RDNA4 only_)
+#### Para DirectX 11
+- FSR 2.2.1 (Padrão, DX11 nativo)
+- FSR 3.1.2 (port não oficial para DX11 nativo)
+- DLSS (DX11 nativo)
+- XeSS 2.X (DX11 nativo, _Apenas para Intel ARC_)
+- XeSS, FSR 2.1.2, 2.2.1, FSR 3.X com Dx12 (_via D3D11on12_)$`^1`$
+- FSR 4.X (via atualização do FSR 3.X com Dx12, _oficialmente exclusivo para RDNA4_)
 
 > [!NOTE]
 > <details>
->  <summary><b>Expand for [1]</b></summary>
+>  <summary><b>Clique para expandirExpand for [1]</b></summary>
 >
 > _**[1]** These implementations use a background DirectX12 device to be able to use DX12-only upscalers. There's a performance penalty up to 10-ish % for this method, but allows many more upscaler options. Also native DX11 implementation of FSR 2.2.1 is a backport from Unity renderer and has its own problems of which some were fixed by OptiScaler._
 > </details>
