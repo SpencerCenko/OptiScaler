@@ -139,8 +139,8 @@ Atualmente o **OptiScaler** pode ser usado com DirectX 11, DirectX 12 e Vulkan, 
 
 Para mais informações sobre o OptiFG e como usá-lo, consulte a página na Wiki - [OptiFG](https://github.com/optiscaler/OptiScaler/wiki/OptiFG).
 
-
-<a id="instalacao"></a> ## Instalação
+<a id="instalacao"></a>
+## Instalação
 > [!CAUTION]
 > _**Aviso**: **não use esse mod em jogos online.** ele pode acionar o anti-cheat do jogo, resultando em banimentos!_
 
@@ -149,8 +149,8 @@ Para mais informações sobre o OptiFG e como usá-lo, consulte a página na Wik
 
 ## Configuração
 Por favor, consulte [esse](Config.md) documento para os parâmetros de configuração e explicações. Se sua placa de vídeo não é da Nvidia, consulte [GPU spoofing options](Spoofing.md) *(Irá ser atualizado)*
-
-## Problemas conhecidos {#known-issues}
+<a id="known-issues"></a>
+## Problemas conhecidos 
 
 > [!NOTE]
 > **Para uma lista de problemas conhecidos, consulte a [**Wiki**](https://github.com/optiscaler/OptiScaler/wiki)**.
