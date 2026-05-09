@@ -36,6 +36,7 @@
 </div>
 
 
+<a id="sobre"></a>
 ## Sobre
  **OptiScaler** é uma ferramenta que te permite substituir upscalers em jogos que ***já suportam DLSS2+ / FSR2+ / XeSS*** ($`^1`$), assim como gerenciar o ***frame generation*** nos jogos já mencionados _(seja substituindo o FG já existente ou habilitando-o em jogos que suportam DX12 através do experimental ***OptiFG***)_. Também oferece várias opções de customização para todos os usuários, incluindo aqueles com placas de vídeo Nvidia usando DLSS.
 
@@ -87,6 +88,7 @@
 
 *Esse projeto é baseado no excelente [CyberFSR2](https://github.com/PotatoOfDoom/CyberFSR2) de [PotatoOfDoom](https://github.com/PotatoOfDoom).*
 
+<a id="how-it-work"></a>
 ## Como funciona? 
 * O OptiScaler age como um intermediário, ele intercepta os chamados do upscaler pelo jogo (_**Inputs**_) e os redireciona para o upscaler escolhido no back-end (_**Output**_), permitindo o usuário à substituir uma tecnologia por outra. **Inputs -> OptiScaler -> Outputs**  
 * _Ou de forma mais simples, **Input** é o upscaler usado nas configurações do jogo, e **Output** o que é selecionado no Overlay do optiscaler._
@@ -99,6 +101,7 @@
 
 ![inputs_e_outputs](https://github.com/user-attachments/assets/7ff37fd7-515f-488d-99ff-faa586e206fc)
 
+<a id="apiups"></a>
 ## quais APIs e Upscalers são Suportados? 
 Atualmente o **OptiScaler** pode ser usado com DirectX 11, DirectX 12 e Vulkan, mas cada API tem diferentes tipos de upscalers suportados.  
 [**OptiFG**](#optifg--hudfix-experimental-hud-ghosting-fix) atualmente **só em suportado em DX12** e isso é explicado em um tópico separado.
@@ -157,6 +160,7 @@ Por favor, consulte [esse](Config.md) documento para os parâmetros de configura
 > 
 > Também vale a pena checar a [Lista de compatibilidade](https://github.com/optiscaler/OptiScaler/wiki/Compatibility-List) for possible game issues and their fixes.
 
+<a id="compilation"></a>
 ## Compilação 
 
 ### Requisistos
